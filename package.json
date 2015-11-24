@@ -1,0 +1,11 @@
+{
+  "name": "listingClients_MEAN",
+  "version": "0.0.1",
+  "description":"Listing de clients",
+  "dependencies":{
+	"express":"*",
+	"body-parser":"*",
+	"mongojs":"*"
+  },
+  "author":"poma"
+}
