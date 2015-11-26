@@ -45,11 +45,12 @@
 		</thead>
 		<tbody>
 		<tr>
-			<td><input ng-model="client.prenom" type="text" class="form-control" name="formulaire_prenom"></td>
-			<td><input ng-model="client.nom" type="text" class="form-control" name="formulaire_nom"></td>
-			<td><input ng-model="client.email" type="text" class="form-control" name="formulaire_email"></td>
-			<td><input ng-model="client.tel" type="text" class="form-control" name="formulaire_tel"></td>
-			<td><button id="boutonAjout" class="btn btn-default" ng-click="ajoutClient()" >Ajouter</button></td>
+			<td><input ng-model="client.prenom" type="text" class="form-control" name="prenom"></td>
+			<td><input ng-model="client.nom" type="text" class="form-control" name="nom"></td>
+			<td><input ng-model="client.email" type="text" class="form-control" name="email"></td>
+			<td><input ng-model="client.telephone" type="text" class="form-control" name="tel"></td>
+			<td><button id="boutonAjout" class="btn btn-default" ng-hide="cacherBoutonAjouter"; ng-click="ajoutClient()" >Ajouter</button>
+			<button id="boutonModifier" class="btn btn-info" ng-show="cacherBoutonModifier"; ng-click="updateClient()" >Modifier</button></td>
 		</tr>
 		<tr ng-repeat="client in clients">
 			<td>{{client.prenom}}</td>
@@ -57,8 +58,8 @@
 			<td>{{client.email}}</td>
 			<td>{{client.telephone}}</td>
 			<td>
-				<button class="btn btn-warning">editer</button>
-				<button class="btn btn-danger">suppr</button>
+				<button class="btn btn-warning" ng-click="editerClient(client._id)">editer</button>
+				<button class="btn btn-danger" ng-click="supprimerClient(client._id)">suppr</button>
 			</td>
 		</tr>
 		</tbody>
