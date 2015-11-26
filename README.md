@@ -5,14 +5,9 @@
 - bower v1.6.5
 
 
-## Executer et tester ##
-1.
-2.
-
-## Etapes - bootstraping de l'app ##
-
-
-
+## Infos ##
+MERCI Microsoft Windows, pour des raisons inconnues le fichier README a été corrompu...? WTF!
+Heureusement projet assez easy...
 
 
 
